@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 2024-05-15 23:16:09 by Eclipse SUMO netedit Version 1.19.0
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/neteditConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="C:\Users\Mr.D\Desktop\Graduation thesis\Flat ramp\Flat ramp.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="C:\Users\Mr.D\Desktop\Graduation thesis\Flat ramp\Flat ramp.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.min-radius.fix.railways value="false"/>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <lefthand value="0"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.50"/>
+        <rectangular-lane-cut value="0"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="0"/>
+    </pedestrian>
+
+</configuration>
+-->
+
+<net version="1.16" junctionCornerDetail="5" limitTurnSpeed="5.50" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/net_file.xsd">
+
+    <location netOffset="-665580.94,-2938286.90" convBoundary="0.00,0.00,314.12,1054.86" origBoundary="106.662389,26.555567,106.669817,26.565062" projParameter="+proj=utm +zone=48 +ellps=WGS84 +datum=WGS84 +units=m +no_defs"/>
+
+    <type id="highway.trunk" priority="13" numLanes="2" speed="27.78" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" oneway="0"/>
+    <type id="highway.trunk_link" priority="8" numLanes="1" speed="22.22" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" oneway="0"/>
+
+    <edge id=":merge_0" function="internal">
+        <lane id=":merge_0_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="25.00" length="20.03" shape="128.46,513.68 127.91,509.85 127.05,505.60 125.48,500.62 122.76,494.60"/>
+    </edge>
+    <edge id=":merge_1" function="internal">
+        <lane id=":merge_1_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="20.08" shape="132.61,512.10 122.76,494.60"/>
+        <lane id=":merge_1_1" index="1" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="20.08" shape="135.46,510.63 125.60,493.13"/>
+        <lane id=":merge_1_2" index="2" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="20.08" shape="138.30,509.16 128.45,491.66"/>
+    </edge>
+
+    <edge id="lane1" from="jun1" to="merge" priority="13" type="highway.trunk" spreadType="center" shape="305.57,1054.86 309.71,1008.84 313.75,942.44 314.12,916.47 311.99,882.05 307.64,852.74 294.42,804.36 279.34,769.12 246.53,713.18 213.64,653.21 156.14,546.81 139.81,518.24 126.99,495.81 121.01,484.24">
+        <lane id="lane1_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="587.17" shape="302.38,1054.57 306.52,1008.60 310.55,942.32 310.92,916.55 308.80,882.38 304.50,853.40 291.39,805.42 276.48,770.56 243.75,714.76 210.83,654.74 153.34,548.36 137.03,519.83 132.61,512.10"/>
+        <lane id="lane1_1" index="1" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="587.17" shape="305.57,1054.86 309.71,1008.84 313.75,942.44 314.12,916.47 311.99,882.05 307.64,852.74 294.42,804.36 279.34,769.12 246.53,713.18 213.64,653.21 156.14,546.81 139.81,518.24 135.46,510.63"/>
+        <lane id="lane1_2" index="2" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="587.17" shape="308.76,1055.15 312.90,1009.08 316.95,942.56 317.32,916.39 315.18,881.72 310.78,852.08 297.45,803.30 282.20,767.68 249.31,711.60 216.45,651.68 158.94,545.26 142.59,516.65 138.30,509.16"/>
+    </edge>
+    <edge id="lane2" from="merge" to="jun3" priority="13" type="highway.trunk" spreadType="center" shape="121.01,484.24 109.98,462.89 82.70,392.17 66.86,322.83 59.22,213.26 67.93,125.73 88.65,0.00">
+        <lane id="lane2_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="506.19" shape="122.76,494.60 107.06,464.20 79.63,393.11 63.69,323.30 56.01,213.21 64.76,125.31 85.49,-0.52"/>
+        <lane id="lane2_1" index="1" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="506.19" shape="125.60,493.13 109.98,462.89 82.70,392.17 66.86,322.83 59.22,213.26 67.93,125.73 88.65,0.00"/>
+        <lane id="lane2_2" index="2" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="27.78" length="506.19" shape="128.45,491.66 112.90,461.58 85.77,391.23 70.03,322.36 62.43,213.31 71.10,126.15 91.81,0.52"/>
+    </edge>
+    <edge id="ramp" from="jun2" to="merge" priority="8" type="highway.trunk_link" spreadType="center" shape="0.00,828.27 18.10,815.14 23.49,806.80 27.84,797.74 53.62,738.34 91.67,649.83 96.92,637.63 124.20,573.11 128.27,559.47 130.96,541.97 130.45,527.24 128.18,511.77 123.79,494.90 121.01,484.24">
+        <lane id="ramp_0" index="0" disallow="pedestrian bicycle tram rail_urban rail rail_electric rail_fast ship" speed="22.22" length="347.15" shape="0.00,828.27 18.10,815.14 23.49,806.80 27.84,797.74 53.62,738.34 91.67,649.83 96.92,637.63 124.20,573.11 128.27,559.47 130.96,541.97 130.45,527.24 128.46,513.68"/>
+    </edge>
+
+    <junction id="jun1" type="dead_end" x="305.57" y="1054.86" incLanes="" intLanes="" shape="310.35,1055.29 300.79,1054.43"/>
+    <junction id="jun2" type="dead_end" x="0.00" y="828.27" incLanes="" intLanes="" shape="0.94,829.57 -0.94,826.97"/>
+    <junction id="jun3" type="dead_end" x="88.65" y="0.00" incLanes="lane2_0 lane2_1 lane2_2" intLanes="" shape="83.91,-0.78 93.39,0.78"/>
+    <junction id="merge" type="priority" x="121.01" y="484.24" incLanes="ramp_0 lane1_0 lane1_1 lane1_2" intLanes=":merge_0_0 :merge_1_0 :merge_1_1 :merge_1_2" shape="126.90,514.08 130.02,513.27 131.19,512.83 139.73,508.42 129.87,490.93 121.34,495.33 123.21,499.07 124.46,501.91 125.27,504.34 125.83,506.85 126.31,509.94">
+        <request index="0" response="1110" foes="1110" cont="0"/>
+        <request index="1" response="0000" foes="0001" cont="0"/>
+        <request index="2" response="0000" foes="0001" cont="0"/>
+        <request index="3" response="0000" foes="0001" cont="0"/>
+    </junction>
+
+    <connection from="lane1" to="lane2" fromLane="0" toLane="0" via=":merge_1_0" dir="s" state="M"/>
+    <connection from="lane1" to="lane2" fromLane="1" toLane="1" via=":merge_1_1" dir="s" state="M"/>
+    <connection from="lane1" to="lane2" fromLane="2" toLane="2" via=":merge_1_2" dir="s" state="M"/>
+    <connection from="ramp" to="lane2" fromLane="0" toLane="0" via=":merge_0_0" dir="s" state="m"/>
+
+    <connection from=":merge_0" to="lane2" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":merge_1" to="lane2" fromLane="0" toLane="0" dir="s" state="M"/>
+    <connection from=":merge_1" to="lane2" fromLane="1" toLane="1" dir="s" state="M"/>
+    <connection from=":merge_1" to="lane2" fromLane="2" toLane="2" dir="s" state="M"/>
+
+</net>

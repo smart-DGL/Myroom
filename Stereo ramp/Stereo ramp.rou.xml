@@ -1,0 +1,22 @@
+
+<routes>
+    <!-- VTypes -->
+    <vType id="Ego" accel="6" decel="4.5" sigma="0.5" length="5" minGap="2.5" maxSpeed="11.1" guiShape="passenger"/>
+    <vType id="passenger" accel="3" decel="4.5" sigma="0.5" length="5" minGap="2.5" maxSpeed="20" guiShape="passenger" carFollowModel="IDM" lcStrategic="1.0" lcCooperative="1.0" lcSpeedGain="0.5" lcKeepRight="0.5"
+           tau="1.0" speedFactor="1.0" speedDev="0.1"
+           idmDelta="4" idmT="1.0" idmS0="2" idmV0="20" idmA="3" idmB="4.5"/>
+    <vType id="bus" accel="2.1" decel="8.54" sigma="0.5" length="7" minGap="2.5" maxSpeed="12.5" guiShape="bus" carFollowModel="IDM" lcStrategic="1.0" lcCooperative="1.0" lcSpeedGain="0.5" lcKeepRight="0.5"
+           tau="1.0" speedFactor="1.0" speedDev="0.1"
+           idmDelta="4" idmT="1.0" idmS0="2" idmV0="12.5" idmA="2.1" idmB="8.54"/>
+    <vType id="truck" accel="0.6" decel="3" sigma="0.5" length="7" minGap="2.5" maxSpeed="16.7" guiShape="truck" carFollowModel="IDM" lcStrategic="1.0" lcCooperative="1.0" lcSpeedGain="0.5" lcKeepRight="0.5"
+           tau="1.0" speedFactor="1.0" speedDev="0.1"
+           idmDelta="4" idmT="1.0" idmS0="2" idmV0="16.7" idmA="0.6" idmB="3"/>
+    <!-- Routes -->
+    <route id="ramp1-lane2" edges="ramp1 ramp2 ramp3 lane2"/>
+    <route id="lane-lane2" edges="lane lane0 lane1 lane2"/>
+    <!-- Vehicles, persons and containers (sorted by depart) -->
+    <flow id="flow1" color="green" begin="0" end="7200" probability="0.0417" type="bus" route="lane-lane2"/>
+    <flow id="flow2" color="yellow" begin="0" end="7200" probability="0.0417" type="truck" route="lane-lane2"/>
+    <flow id="flow3" color="blue" begin="0" end="7200" probability="0.1946" type="passenger" route="lane-lane2"/>
+<!--    <vehicle id="ego" type="Ego" depart="triggered" color="white" route="ramp1-lane2"/>-->
+</routes>
